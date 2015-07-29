@@ -1,0 +1,38 @@
+<html>
+<head>
+    <title>移动页面</title>
+    <link rel="stylesheet" type="text/css" href="../css/bill.css">
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+    <script src="../../build/react.js"></script>
+    <script src="../../build/JSXTransformer.js"></script>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+</head>
+<body>
+    <div id="content">
+    </div>
+    <script type="text/jsx">
+        var Header = React.createClass({
+            render: function () {
+                return (
+                    <header className="header">
+                        <div className="header-home">
+                            <i className="icon-home"></i>
+                        </div>
+                        <div className="header-title">
+                            <h1>我的账单</h1>
+                        </div>
+                        <div className="header-meun">
+                            <i className="icon-list"></i>
+                        </div>
+                    </header>
+                );
+            }
+        });
+        React.render(
+            <Header />,
+            document.getElementById('content')
+        );
+    </script>
+</body>
+</html>
