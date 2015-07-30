@@ -5,6 +5,7 @@
 a {
     text-decoration: none;
 }
+
 html {
     font-size: 10px;
 }
@@ -13,7 +14,7 @@ body {
 }
 header {
     background: #3bb4f2;
-    height: 50px;
+    height: 8vh;
     position: relative;
     color: #fff;
     line-height: 50px;
@@ -36,12 +37,23 @@ header {
     right: 10px;
     top: 10;
 }
+
+.header-meun a {
+    color: #fff;
+}
+
 .dialog:target {
-    display: block;
+    width: 100vw;
 }
 
 .dialog {
+    top: 0;
+    position: absolute;
     background: red;
-    height: 300px;
-    display: none;
+    height: 100vh;
+    width: 0;
+    transition: all 0.5s;
+    -moz-transition: all 0.5s; /* Firefox 4 */
+    -webkit-transition: all 0.5s; /* Safari 和 Chrome */
+    -o-transition: all 0.5s; /* Opera */
 }
