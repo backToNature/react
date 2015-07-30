@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+header {
+    background: #3bb4f2;
+    height: 50px;
+    position: relative;
+    color: #fff;
+    line-height: 50px;
+}
+
+.header-title {
+    text-align: center;
+}
+
+.header-home {
+    position: absolute;
+    left: 10px;
+    top: 10;
+    font-size: 30px;
+}
+
+.header-meun {
+    position: absolute;
+    right: 10px;
+    top: 10;
+    font-size: 30px;
+}
+
