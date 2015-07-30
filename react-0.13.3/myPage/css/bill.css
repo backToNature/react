@@ -2,29 +2,46 @@
     margin: 0;
     padding: 0;
 }
+a {
+    text-decoration: none;
+}
+html {
+    font-size: 10px;
+}
+body {
+      font-family: "Segoe UI","Lucida Grande",Helvetica,Arial,"Microsoft YaHei",FreeSans,Arimo,"Droid Sans","wenquanyi micro hei","Hiragino Sans GB","Hiragino Sans GB W3",FontAwesome,sans-serif;
+}
 header {
     background: #3bb4f2;
     height: 50px;
     position: relative;
     color: #fff;
     line-height: 50px;
+    font-size: 3rem;
 }
 
-.header-title {
+.header-title h1 {
     text-align: center;
+    font-size: 2.5rem;
 }
 
 .header-home {
     position: absolute;
     left: 10px;
     top: 10;
-    font-size: 30px;
 }
 
 .header-meun {
     position: absolute;
     right: 10px;
     top: 10;
-    font-size: 30px;
+}
+.dialog:target {
+    display: block;
 }
 
+.dialog {
+    background: red;
+    height: 300px;
+    display: none;
+}

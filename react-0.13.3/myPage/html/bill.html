@@ -12,6 +12,16 @@
     <div id="content">
     </div>
     <script type="text/jsx">
+        var Wrapper = React.createClass({
+            render: function () {
+                return (
+                    <section className="wrapper">
+                        <Header />
+                        <Dialog />
+                    </section>
+                );
+            }
+        });
         var Header = React.createClass({
             render: function () {
                 return (
@@ -23,14 +33,23 @@
                             <h1>我的账单</h1>
                         </div>
                         <div className="header-meun">
-                            <i className="icon-list"></i>
+                            <a href="#dialog"><i className="icon-list"></i></a>
                         </div>
                     </header>
                 );
             }
         });
+        var Dialog = React.createClass({
+            render: function () {
+                return (
+                    <section className="dialog" id="dialog">
+                        <h1>我就是浮层</h1>
+                    </section>
+                );
+            }
+        });
         React.render(
-            <Header />,
+            <Wrapper />,
             document.getElementById('content')
         );
     </script>
